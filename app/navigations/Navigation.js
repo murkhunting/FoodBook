@@ -18,7 +18,7 @@ export default function Navigation() {
         <NavigationContainer>
             <Tab.Navigator
                 tabBar={(props) => <TabBar {...props}/>}
-                initialRouteName="restaurants"
+                initialRouteName="Home"
                 // tabBarOptions={{
                 //     inactiveTintColor: "black",
                 //     activeTintColor: "#7c9473",
