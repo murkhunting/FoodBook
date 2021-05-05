@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 const Tab = ({color, tab, onPress, icon}) => {
     return (
         <TouchableOpacity style={styles.container} onPress={onPress}>
-            {icon && <Ionicons name={icon} size={30} color={color} />}
+            {icon && <Ionicons name={icon} size={38} color={color} />}
             {/* <Text style={{color}}>{tab.name}</Text> */}
         </TouchableOpacity>
     )
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent:"center",   
-        margin: 10, 
+        margin: 8, 
     },
 });
 

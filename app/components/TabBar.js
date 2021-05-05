@@ -9,7 +9,7 @@ const {width} = Dimensions.get("screen")
 const TabBar = ({ state, navigation }) => {
     const {routes} = state;
     const [selected, setSelected] = useState("Home")
-    const renderColor = (currentTab) => (currentTab === selected ? "#4c5c46" : "black");
+    const renderColor = (currentTab) => (currentTab === selected ? "#7c9473" : "black");
 
     const handlePress = (activeTab, index) => {
         if (state.index !== index) { //este if lo ponemos porque si ya estamos en la misma pagina no queremos volver a cargarla
@@ -39,7 +39,7 @@ const TabBar = ({ state, navigation }) => {
 const styles = StyleSheet.create({
     wrapper: {
         position: "absolute",
-        bottom: 20,
+        bottom: 30,
         width,
         alignItems: "center",
         justifyContent: "center",
@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         backgroundColor: "rgba(205,208,203,0.8)",
-        width: 360,
+        height: 60,
+        width: 330,
         borderRadius: 15,
     }
 })

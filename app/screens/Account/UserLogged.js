@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 
 export default function UserLogged() {
     return (
-        <View>
+        <View style={style.description}>
             <Text>UserLogged...</Text>
         </View>
     )
