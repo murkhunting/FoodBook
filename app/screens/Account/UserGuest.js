@@ -7,7 +7,7 @@ export default function UserGuest () {
     const navigation = useNavigation();
 
     return (
-        <ScrollView centerContent={true} style={styles.viewBody}>
+        <ScrollView centerContent={true} style={styles.viewBody} scrollToOverflowEnabled={true}>
             <Image 
                 source={require("../../../assets/img/user-guest.jpg")}
                 resizeMode="contain"
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     image: {
         height: 300,
         width: "100%",
-        marginBottom: 40,
+        marginBottom: 10,
         
     },
     title: {
@@ -59,7 +59,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     btnContainer:{
-        width: "70%"
+        width: "70%",
+        marginBottom: 10,
         
     }
 })
